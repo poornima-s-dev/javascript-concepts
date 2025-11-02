@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM in JS</title>
+</head>
+<body>
+    <h1 id="heading">Heading</h1>
+    <h2 id="h">Heading</h2>
+    <p>Para 1</p>
+    <p>Para 2</p>
+    <p>Para 3</p>
+    <p>Para 4</p>
+
+    <button onclick="change()">Click for change</button>
+
+    <script>
+        function change(){
+            document.getElementsByTagName("p")[0].style.color="red";
+            document.getElementsByTagName("p")[1].style.color="blue";
+            document.getElementsByTagName("p")[3].style.color="green";
+
+            const para = document.getElementsByTagName("p");
+            for(let i=0;i<para.length;i++){
+                para[i].style.backgroundColor="pink";
+                para[i].style.fontSize="30px";
+            }
+
+            document.getElementById("heading").textContent="DOM in JavaScript";
+            document.getElementById("h").innerHTML="<i>DOM in JS</i>";
+        }
+    </script>
+</body>
+
+</html>

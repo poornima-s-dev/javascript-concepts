@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Constructors in Js</title>
+</head>
+<body>
+    <h2>Control Constructors in JavaScript</h2>
+    
+    <script scr="script.js" type="text/JavaScript">
+
+        let pin;
+        do{
+            pin = prompt("Enter your PIN");
+            pin = Number(pin);
+        }while(pin !== 1234);
+        document.writeln("PIN correct, Access Granted!");
+    </script>
+</body>
+</html>
